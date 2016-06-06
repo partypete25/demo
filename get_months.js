@@ -1,4 +1,4 @@
- getMonths(x){
+ function getMonths(x){
   var months, language = x;
   switch(language) {
     case "ar":
