@@ -1,5 +1,5 @@
 function getMonths(x) {
-    var months;
+    var details = [], months, dd, mmm;
     var language = x;
     switch(language) {
         case "af":
@@ -7,15 +7,23 @@ function getMonths(x) {
             break;
         case "ar":
             months = 'كانون الثاني يناير_شباط فبراير_آذار مارس_نيسان أبريل__أيار مايو_حزيران يونيو_تموز يوليو_آب أغسطس_أيلول سبتمبر_تشرين الأول أكتوبر_تشرين الثاني نوفمبر_كانون الأول ديسمبر'.split('_');
+            dd = 'يوم';
+            mmm = 'شهر';
             break;
         case "ar-ma":
             months = 'يناير_فبراير_مارس_أبريل_ماي_يونيو_يوليوز_غشت_شتنبر_أكتوبر_نونبر_دجنبر'.split('_');
+            dd = 'يوم';
+            mmm = 'شهر';
             break;
         case "ar-sa":
             months = 'يناير_فبراير_مارس_أبريل_مايو_يونيو_يوليو_أغسطس_سبتمبر_أكتوبر_نوفمبر_ديسمبر'.split('_');
+            dd = 'يوم';
+            mmm = 'شهر';
             break;
         case "ar-tn":
             months = 'جانفي_فيفري_مارس_أفريل_ماي_جوان_جويلية_أوت_سبتمبر_أكتوبر_نوفمبر_ديسمبر'.split('_');
+            dd = 'يوم';
+            mmm = 'شهر';
             break;
         case "az":
             months = 'yan_fev_mar_apr_may_iyn_iyl_avq_sen_okt_noy_dek'.split('_');
@@ -172,6 +180,8 @@ function getMonths(x) {
             break;
         case "nl":
             months = 'jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.'.split('_');
+            dd = 'dag';
+            mmm = 'maand';
             break;
         case "nn":
             months = ''.split('_');
@@ -190,6 +200,8 @@ function getMonths(x) {
             break;
         case "ru":
             months = 'января_февраля_марта_апреля_мая_июня_июля_августа_сентября_октября_ноября_декабря'.split('_');
+            dd = 'день';
+            mmm = 'месяц';
             break;
         case "sk":
             months = ''.split('_');
@@ -243,5 +255,5 @@ function getMonths(x) {
             months = ''.split('_');
             break;
     }
-    return months;
+    return details[months, mm, ddd];
 }
