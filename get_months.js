@@ -1,5 +1,6 @@
- function getMonths(x){
-  var months, language = x;
+ function getMonths(x) {
+  var months;
+  var language = x;
   switch(language) {
     case "ar":
       months = 'يناير_فبراير_مارس_أبريل_مايو_يونيو_يوليو_أغسطس_سبتمبر_أكتوبر_نوفمبر_ديسمبر'.split('_');
