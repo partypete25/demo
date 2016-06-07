@@ -1,5 +1,5 @@
 function getMonths(x) {
-    var details = [], months, dd, mmm;
+    var months, dd, mmm;
     var language = x;
     switch(language) {
         case "af":
@@ -255,5 +255,5 @@ function getMonths(x) {
             months = ''.split('_');
             break;
     }
-    return details[months, dd, mmm];
+    return [months, dd, mmm];
 }
