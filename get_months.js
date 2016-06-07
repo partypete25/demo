@@ -255,5 +255,5 @@ function getMonths(x) {
             months = ''.split('_');
             break;
     }
-    return details[months, mm, ddd];
+    return details[months, dd, mmm];
 }
